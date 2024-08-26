@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  font-family: 'Lacquer', Arial;
+  height: 100%;
+  overflow: hidden
+}
+
+h1 { 
+    font-size: 4rem;
+    color: rgb(170, 255, 0);
+    text-shadow: 0 5px 18px rgb(170, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover; /* Este é o truque */
+}
+
+header {
+    max-height: 200px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.587);
+    background-color: transparent;
+}
+header > nav > ul > a > li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(164, 222, 48);
+}
+
+a:hover {
+    color: rgb(170, 255, 0);
+    transition: .3s;
+    text-shadow: 0 5px 18px rgb(170, 255, 0);
+    text-decoration: underline;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.content {
+    background-size: cover;
+}
